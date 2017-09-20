@@ -22,7 +22,7 @@
 
 _CLC_OVERLOAD _CLC_DEF __CLC_GENTYPE modf(__CLC_GENTYPE x, __CLC_GENTYPE *iptr) {
   *iptr = trunc(x);
-  return copysign(isinf(x) ? 0.0f : x - *iptr, x);
+  return copysign(isinf(x) ? (__CLC_GENTYPE)0.0f : x - *iptr, x);
 }
 
 #define MODF_DEF(addrspace) \

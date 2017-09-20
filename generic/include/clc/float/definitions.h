@@ -80,6 +80,11 @@
 #define HALF_MIN_10_EXP -4
 #define HALF_MIN_EXP    -13
 
+#define HALF_RADIX 	2
+#define HALF_MAX 	0x1.ffcp15h
+#define HALF_MIN 	0x1.0p-14h
+#define HALF_EPSILON 	0x1.0p-10h
+
 #endif
 
 #endif

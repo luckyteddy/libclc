@@ -26,6 +26,9 @@
 #elif __CLC_FPSIZE == 64
 #define __CLC_NAN __builtin_nan("")
 #define ZERO 0.0
+#elif __CLC_FPSIZE == 16
+#define __CLC_NAN (half)NAN
+#define ZERO 0.0h
 #else
 #error "Invalid value for __CLC_FPSIZE"
 #endif
